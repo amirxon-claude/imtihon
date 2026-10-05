@@ -1,0 +1,7 @@
+node_modules
+dist
+.vite
+backend/node_modules
+backend/data/db.json
+backend/data/*.tmp
+backend/data/test-*.json

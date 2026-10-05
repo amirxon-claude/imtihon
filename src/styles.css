@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-ink: #111111;
+  --color-klein: #002fa7;
+  --color-klein-dark: #001f70;
+  --color-rule: #d8d8dc;
+  --color-soft: #f7f7f8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-width: 280px;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-klein);
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-klein);
+    outline-offset: 4px;
+  }
+}
